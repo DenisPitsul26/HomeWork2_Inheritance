@@ -37,19 +37,25 @@ public class Board {
     }
 
     public void showInfoAboutAllShapesInTheBoard(){
-        System.out.println();
-        double totalArea = 0;
-
         for (int i = 0; i < 4; i++) {
             if (shapeList[i] != null){
                 System.out.println((i+1) +") "+ shapeList[i] +".");
-                totalArea += shapeList[i].getArea();
             }
             else
                 System.out.println((i+1) +") Is empty.");
         }
-        System.out.println("Total area shapes on the board: "+ totalArea +".");
-        System.out.println();
+    }
+
+    public double getTotalArea() {
+        double totalArea = 0;
+
+        for (int i = 0; i < 4; i++) {
+            if (shapeList[i] != null){
+                totalArea += shapeList[i].getArea();
+            }
+        }
+
+        return totalArea;
     }
 
     @Override

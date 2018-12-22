@@ -22,9 +22,12 @@ public class Main {
         board.addShapeToBoard(circle3, 4);
         board.addShapeToBoard(triangle2, 2);
         board.showInfoAboutAllShapesInTheBoard();
+        System.out.println("Total area shapes on the board: "+ board.getTotalArea() +".");
 
         board.deleteShapeFromBoard(3);
         board.deleteShapeFromBoard(2);
         board.showInfoAboutAllShapesInTheBoard();
+        System.out.println("Total area shapes on the board: "+ board.getTotalArea() +".");
+
     }
 }
