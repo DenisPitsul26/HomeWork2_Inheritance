@@ -46,7 +46,7 @@ public class Triangle extends Shape{
     }
 
     @Override
-    double getPerimeter() {
+    public double getPerimeter() {
         Point vectorPoint12 = new Point(getPoint2().getX() - getPoint1().getX(), getPoint2().getY() - getPoint1().getY());
         Point vectorPoint23 = new Point(getPoint3().getX() - getPoint2().getX(), getPoint3().getY() - getPoint2().getY());
         Point vectorPoint13 = new Point(getPoint3().getX() - getPoint1().getX(), getPoint3().getY() - getPoint1().getY());
@@ -59,7 +59,7 @@ public class Triangle extends Shape{
     }
 
     @Override
-    double getArea() {
+    public double getArea() {
         Point vectorPoint12 = new Point(getPoint2().getX() - getPoint1().getX(), getPoint2().getY() - getPoint1().getY());
         Point vectorPoint23 = new Point(getPoint3().getX() - getPoint2().getX(), getPoint3().getY() - getPoint2().getY());
         Point vectorPoint13 = new Point(getPoint3().getX() - getPoint1().getX(), getPoint3().getY() - getPoint1().getY());

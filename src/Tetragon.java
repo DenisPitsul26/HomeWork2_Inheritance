@@ -57,7 +57,7 @@ public class Tetragon extends Shape{
     }
 
     @Override
-    double getPerimeter() {
+    public double getPerimeter() {
         Point vectorPoint12 = new Point(getPoint2().getX() - getPoint1().getX(), getPoint2().getY() - getPoint1().getY());
         Point vectorPoint23 = new Point(getPoint3().getX() - getPoint2().getX(), getPoint3().getY() - getPoint2().getY());
         Point vectorPoint34 = new Point(getPoint4().getX() - getPoint3().getX(), getPoint4().getY() - getPoint3().getY());
@@ -72,7 +72,7 @@ public class Tetragon extends Shape{
     }
 
     @Override
-    double getArea() {
+    public double getArea() {
         Point vectorPoint12 = new Point(getPoint2().getX() - getPoint1().getX(), getPoint2().getY() - getPoint1().getY());
         Point vectorPoint23 = new Point(getPoint3().getX() - getPoint2().getX(), getPoint3().getY() - getPoint2().getY());
         Point vectorPoint34 = new Point(getPoint4().getX() - getPoint3().getX(), getPoint4().getY() - getPoint3().getY());

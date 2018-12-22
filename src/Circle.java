@@ -35,7 +35,7 @@ public class Circle extends Shape{
     }
 
     @Override
-    double getPerimeter() {
+    public double getPerimeter() {
         Point vectorRadius = new Point(getPointOnTheCircle().getX() - getPointCenter().getX(),
                 getPointOnTheCircle().getY() - getPointCenter().getY());
 
@@ -45,7 +45,7 @@ public class Circle extends Shape{
     }
 
     @Override
-    double getArea() {
+    public double getArea() {
         Point vectorRadius = new Point(getPointOnTheCircle().getX() - getPointCenter().getX(),
                 getPointOnTheCircle().getY() - getPointCenter().getY());
 
